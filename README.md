@@ -1,7 +1,7 @@
-Overview
+## Overview
 Welcome to the NASA ETL Pipeline project! This project is designed to periodically retrieve data on recent startup articles using NASA's public API, process the information, and store relevant data such as article names, funding details, and descriptions in a Monday.com database. This pipeline is orchestrated using Apache Airflow, allowing for robust scheduling, monitoring, and scalability.
 
-Project Contents
+## Project Contents
 Your NASA ETL project contains the following files and folders:
 
 dags: This folder contains Python files for your Airflow DAGs. By default, it includes a primary DAG:
@@ -12,7 +12,7 @@ packages.txt: For listing any required OS-level packages, currently empty.
 requirements.txt: For listing additional Python packages necessary for your ETL pipeline, currently empty.
 plugins: For adding any custom or community plugins required for your Airflow project. It is currently empty.
 airflow_settings.yaml: A local-only file to set Airflow Connections, Variables, and Pools, which can streamline configuration during DAG development.
-Deploy Your Project Locally
+## Deploy Your Project Locally
 Start Airflow on your local machine by running astro dev start.
 
 This command will initiate 4 Docker containers on your machine, each dedicated to a specific Airflow component:
